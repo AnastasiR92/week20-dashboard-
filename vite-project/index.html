@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="/vite-project/style.css" />
+    <link rel="stylesheet" href="/vite-project/normalize.css" />
+    <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+    ></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <header class="header">
+      <h2 id="header-title">Dashboard</h2>
+      <input
+        type="date"
+        id="date"
+        name="date"
+        min="2018-01-01"
+        max="2101-12-31"
+      />
+    </header>
+    <section class="sidebar">
+      <a href="#"><img id="logo" src="/vite-project/dashboard.png" /></a>
+      <div>
+        <h3 id="sidebar-title">Projects</h3>
+        <select id="select-options">
+          <option>Hope project</option>
+          <option>Secret project</option>
+          <option>High project</option>
+          <option>Health project</option>
+        </select>
+      </div>
+      <div class="wrapper">
+      <div class="sidebar">
+        <ul>
+          <li>
+              <a href="#" class="active">
+                  <span class="icon"><i class="fas fa-home"></i></span>
+                  <span class="item">Home</span>
+              </a>
+          </li>
+          <li>
+              <a href="#">
+                  <span class="icon"><i class="fas fa-desktop"></i></span>
+                  <span class="item">My Dashboard</span>
+              </a>
+          </li>
+          <li>
+              <a href="#">
+                  <span class="icon"><i class="fas fa-user-friends"></i></span>
+                  <span class="item">People</span>
+              </a>
+          </li>
+          <li>
+              <a href="#">
+                  <span class="icon"><i class="fas fa-tachometer-alt"></i></span>
+                  <span class="item">Perfomance</span>
+              </a>
+          </li>
+          <li>
+              <a href="#">
+                  <span class="icon"><i class="fas fa-database"></i></span>
+                  <span class="item">Development</span>
+              </a>
+          </li>
+          <li>
+              <a href="#">
+                  <span class="icon"><i class="fas fa-chart-line"></i></span>
+                  <span class="item">Reports</span>
+              </a>
+          </li>
+          <li>
+              <a href="#">
+                  <span class="icon"><i class="fas fa-user-shield"></i></span>
+                  <span class="item">Admin</span>
+              </a>
+          </li>
+          <li>
+              <a href="#">
+                  <span class="icon"><i class="fas fa-cog"></i></span>
+                  <span class="item">Settings</span>
+              </a>
+          </li>
+      </ul>
+  </div>
+</div>
+      </div>
+    </section>
+    <main class="main">
+      <div class="main-cardbox">
+        <div id="card1">
+          <canvas id="myChart"></canvas>
+        </div>
+        <div id="card2">
+          <canvas id="myChart2"></canvas>
+        </div>
+        <div id="card3">
+          <div id="regions_div"></div>
+        </div>
+        <div id="card4">
+          <div id="chartdiv"></div>
+        </div>
+        <div id="card5">
+          <div id="chart_div"></div>
+        </div>
+        <div id="card6">
+          <div id="chart_div2"></div>
+        </div>
+      </div>
+    </main>
+    <script type="module" src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/wc.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+  </body>
+</html>
